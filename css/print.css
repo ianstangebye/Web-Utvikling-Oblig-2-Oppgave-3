@@ -1,0 +1,17 @@
+. {
+	font-size = 18px;
+}
+
+header {
+	display:none;
+}
+/*må ordne page-break*/
+
+footer {
+	display:none;
+	
+}
+
+aside {
+	display:none;
+}
