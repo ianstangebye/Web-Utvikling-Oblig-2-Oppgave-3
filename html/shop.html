@@ -8,14 +8,14 @@
 	<meta name="description"
 		content="Woblig group prosject" />
 		
-	<link rel="stylesheet" type="text/css" href="css/index.css" media="all"/>
-	<link rel="stylesheet"	type="text/css"	href="css/print.css" media="print"	/>
+	<link rel="stylesheet" type="text/css" href="../css/index.css" media="all"/>
+	<link rel="stylesheet"	type="text/css"	href="../css/print.css" media="print"	/>
 	
 	<link	href="rsstoontown.xml"	type="application/rss+xml"	rel="alternate"	title="RSS	Feed"	/>	
 	
 	
 	<script>
-	kommentar
+	
 	
 		window.onload = oppstart;
 		
@@ -40,10 +40,10 @@
 		
 		<nav id="sideNavigasjon">
 			<ul>
-				<li><a href="index.html"> HOME </a></li>
-				<li><a href="html/shop.html"> SHOP </a></li>
-				<li><a href="html/about.html"> ABOUT</a></li>
-				<li><a href="html/about.html"> MAP </a></li>
+				<li><a href="../index.html"> HOME </a></li>
+				<li><a href="shop.html"> SHOP </a></li>
+				<li><a href="about.html"> ABOUT</a></li>
+				<li><a href="map.html"> MAP </a></li>
 			</ul>
 			
 		</nav>
@@ -52,21 +52,34 @@
 	
 	<main>
 
-		<aside>
-			<input type="checkbox" name="kryssav" value="undertale"/>t-shirts from undertale<br />
-			<input type="checkbox" name="kryssav" value="undertale"/>t-shirts from undertale<br />
-			<input type="checkbox" name="kryssav" value="undertale"/>t-shirts from undertale<br />
-			<input type="checkbox" name="kryssav" value="undertale"/>t-shirts from undertale<br />
+		<aside id="bestemprodukt">
+		<form action="action_page.php" method="get"> <!--action bestemmer hva som skal skje med det som skal sendes inn. method get er åpen sending for usensitiv info-->
+			<input type="checkbox" name="kryssav" value="undertaletshirt" checked/>T-shirts from Undertale<br />
+			<input type="checkbox" name="kryssav" value="undertalehoodie" checked/>Hoodies from Undertale<br />
+			<input type="checkbox" name="kryssav" value="undertale"/>Accessories from Undertale<br />
+			<input type="checkbox" name="kryssav" value="undertale"/>Shoes from Undertale<br />
+		</form>
 		</aside>
 		<article>
-			<img> her kommer bilder </img>
-			<img> her kommer bilder </img>
-			<img> her kommer bilder </img>
-			<img> her kommer bilder </img>
+			<section id="products">
+				<figure id="detvihar">
+					<img src="../bilde/tilshop/undertale.tskjorte1.jpg" alt="purple tshirt with a character from undertale" width="250" height="350" /> 
+						<figcaption>Price 150 NOK
+						</figcaption> 
+				
+				
+					<img src="../bilde/tilshop/undertale.genser1.jpg" alt="black hoodie with all characters from undertale" width="250" height="350"/> 
+						<figcaption>Price 200 NOK
+						</figcaption> 
+					<img>  </img>
+					<img>  </img>
+			    </figure>
+			</section>
+		
 		</article>
 		
 	</main>
-	<footer>  <a href="rss/rsstoontown.xml"><img src="#" width="36" height="14"></a>
+	<footer>  <a href="../rss/rsstoontown.xml"><img src="../rss/rssknapp.jpg" width="36" height="14"></a>
 	her kommer RSS og FACEBOOK og INSTAGRAM knapper	</footer>
 </body>
 </html>

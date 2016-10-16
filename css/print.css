@@ -1,5 +1,10 @@
 . {
-	font-size = 18px;
+	font-size = 12px;
+	font-family: "Times New Roman", serif;
+}
+body{
+	background: white;
+	margin-left: 10%;
 }
 
 header {
@@ -14,4 +19,13 @@ footer {
 
 aside {
 	display:none;
+}
+
+#bestemproduct{
+	color: grayscale; /*stemmer dette*/
+	
+}
+
+main {
+	float: none;
 }
