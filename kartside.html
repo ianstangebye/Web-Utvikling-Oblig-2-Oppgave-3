@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Kartside</title>
+  <meta name="description"
+		content="Woblig group prosject" />
+
+	<link rel="stylesheet" type="text/css" href="css/index.css" media="all"/>
+	<link rel="stylesheet"	type="text/css"	href="css/print.css" media="print"	/>
+
+	<link	href="rsstoontown.xml"	type="application/rss+xml"	rel="alternate"	title="RSS	Feed"	/>
+  <script>
+
+    var map;
+
+    window.onload = oppstart;
+
+    function oppstart() {
+      map = new google.maps.Map(document.getElementById('gmap_canvas'), {
+          center: {lat: 59.13299639999999, lng: 11.387456899999961},
+          zoom: 14
+        });
+    }
+
+
+
+  </script>
+  <style>
+  #gmap_canvas img{max-width:none!important;background:none!important}
+  </style>
+</head>
+<body>
+  <header>
+    <div id="logo"> logo
+    </div>
+  her skal vi vha css, float left logoen vår. clear right skal vi ha en boks som inneholder
+    <nav id="handlekurvSokInnLog">
+      <ul>
+        <li> handlekurv</li>
+        <li> log in</li>
+        <li> search </li>
+      </ul>
+    </nav>
+
+    <nav id="sideNavigasjon">
+      <ul>
+        <li><a href="index.html"> HOME </a></li>
+        <li><a href="html/shop.html"> SHOP </a></li>
+        <li><a href="html/about.html"> ABOUT</a></li>
+        <li><a href="html/about.html"> MAP </a></li>
+      </ul>
+    </nav>
+    <figure>
+      <img id="logoHeader" src="bilde/log.png" />
+    </figure>
+
+  </header>
+    <section>
+      <aside>
+      </aside>
+      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'>
+      </script>
+      <!-- <div style='overflow:hidden;height:auto;width:80%;'> -->
+        <div id='gmap_canvas'>
+          <div><small><a href="http://www.embedgooglemaps.com/en/"></a>
+          </small></div>
+        </div>
+        <!-- <div><small><a href="http://www.embedgooglemaps.com/en/"></a>
+        </small></div> -->
+    </section>
+</body>
+</html>
