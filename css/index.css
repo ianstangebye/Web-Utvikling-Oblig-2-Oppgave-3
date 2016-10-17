@@ -3,6 +3,13 @@
 * MOBILE FIRST MEDIA QUERY DESIGN
 *
 */
+
+#map {
+  height:400px;
+  width:100%;
+}
+
+
 #sideNavigasjon ul li{
 	display:inline-block;
 }
@@ -117,17 +124,5 @@ footer {
 
 
 
-}
-
-#gmap_canvas {
-  height:600px;
-  width:800px;
-  /*max-width:none!important;
-  background:none!important;*/
-}
-
-#gmap_canvas img {
-  max-width:none!important;
-  background:none!important;
 }
 
