@@ -12,23 +12,21 @@
 	<link rel="stylesheet"	type="text/css"	href="../css/print.css" media="print"	/>
 
 	<link	href="rsstoontown.xml"	type="application/rss+xml"	rel="alternate"	title="RSS	Feed"	/>
-
-
 	<script>
+		window.onload = initMap;
 
-    var map;
-
-    window.onload = oppstart;
-
-    function oppstart() {
-      map = new google.maps.Map(document.getElementById('gmap_canvas'), {
-          center: {lat: 59.13299639999999, lng: 11.387456899999961},
-          zoom: 14
-        });
-
-
-    }
-
+		function initMap() {
+			var halden = {lat: 59.13299639999999, lng: 11.387456899999961};
+			var citywok = {lat: 59.120202, lng:59.120202}
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 14,
+				center: halden
+			});
+			var marker = new google.maps.Marker({
+				position: halden,
+				map: map
+			});
+		}
 	</script>
 </head>
 <body>
@@ -79,15 +77,10 @@
 			<input type="checkbox" name="kryssav" value="crispyCrap"/>crispy crab <br />
 		</aside>
 		<article>
-			<!-- <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script> -->
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASCmaUOpeymPv8sgS_6rEMb9k1kJcu6TI&callback=oppstart">
-    </script>
-			<div id="gmap_canvas">
-				<div>
-					<small>
-						<a href="http://www.embedgooglemaps.com/en/"></a>
-					</small>
-				</div>
+			<script async defer
+	        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtcoYsTMMR3UsHUsWe8NcyNQjfvgG7e5Y&callback=initMap">
+	    </script>
+			<div id="map">
 			</div>
 		</article>
 
