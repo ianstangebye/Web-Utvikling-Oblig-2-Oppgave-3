@@ -12,6 +12,8 @@
 	<link rel="stylesheet"	type="text/css"	href="../css/print.css" media="print"	/>
 
 	<link	href="rsstoontown.xml"	type="application/rss+xml"	rel="alternate"	title="RSS	Feed"	/>
+
+
 	<script>
 		window.onload = initMap;
 
@@ -31,16 +33,10 @@
 </head>
 <body>
 	<header>
-		<div id="logo"> logo
-		</div>
-	her skal vi vha css, float left logoen vår. clear right skal vi ha en boks som inneholder
-		<nav id="handlekurvSokInnLog">
-			<ul>
-				<li> handlekurv</li>
-				<li> log in</li>
-				<li> search </li>
-			</ul>
-		</nav>
+		<!-- <figure> -->
+      <img id="logoHeader" src="../bilde/logosmaller.png" />
+    <!-- </figure> -->
+	<!-- her skal vi vha css, float left logoen vår. clear right skal vi ha en boks som inneholder -->
 
 		<nav id="sideNavigasjon">
 			<ul>
@@ -49,12 +45,15 @@
 				<li><a href="about.html"> ABOUT</a></li>
 				<li><a href="map.html"> MAP </a></li>
 			</ul>
-
 		</nav>
 
-		<figure>
-      <img id="logoHeader" src="../bilde/logo.png" />
-    </figure>
+		<nav id="handlekurvSokInnLog">
+
+				<button>Handlekurv</button>
+				<button>Log in</button>
+			<input type="text" placeholder="Search" />
+
+		</nav>
 
 
 	</header>
@@ -70,7 +69,8 @@
 <!-- The Ruins (fra Undertale): Stedet settes til festningen. -->
 
 
-		<aside>
+		<aside id="checkbox">
+			<h3>Locations</h3>
 			<input type="checkbox" name="kryssav" value="theRuins"/>the ruins, undertale<br />
 			<input type="checkbox" name="kryssav" value="cityWok"/>City wok<br />
 			<input type="checkbox" name="kryssav" value="kebabShop"/>Kebab Shop<br />
@@ -85,7 +85,7 @@
 		</article>
 
 	</main>
-	<footer>  <a href="rss/rsstoontown.xml"><img src="#" width="36" height="14"></a>
+	<footer>  <a href="../rss/rsstoontown.xml"><img src="../rss/rssknapp.jpg" width="36" height="14"></a>
 	her kommer RSS og FACEBOOK og INSTAGRAM knapper	</footer>
 </body>
 </html>
