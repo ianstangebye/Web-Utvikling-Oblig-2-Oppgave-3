@@ -1,13 +1,67 @@
 
+
+/* smaller devices */
+@media only screen and (min-width :480px){
+	#sale{
+	width: 20%;
+	height: 20%;
+	}
+	.imgSection{
+	
+	width: 70%;
+	}
+	nav{
+		width: 100%;
+	}
+	#txt4{
+		width: 15%
+	}
+	#txt3{
+		width: 22%
+	}
+	#txt2{
+		width: 15%
+	}
+ }
+ 
+ 
+/*	Small	Devices,	Tablets	*/
+@media only screen and (min-width : 670px){
+	#sale{
+	width: 50%;
+	height: 20%;
+ }
+	.imgSection{
+	width: 50%;
+	}
+	nav{
+		width: 100%;
+	}
+	#txt4{
+		width: 15%
+	}
+	#txt3{
+		width: 22%
+	}
+	#txt2{
+		width: 15%
+	}
+}
+
+/*	Medium	Devices,	Desktops	*/
+@media only screen and (min-width : 1024px){
 body{
 	color: #ddd4d4;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 50px;
     /*line-height: 2;*/
     /*background-attachment: fixed;*/
    /* background-size: 100%;*/
 }
 header{
 	background-color: black;
-	height: 50%;
+	height: 20%;
 	
 	
 }
@@ -23,11 +77,11 @@ h1{
 }
 .logoslide {
 	
-	width: 800px;
-	height: 300px;
+	width: 60%;
+	
 	display: block;
 	margin: auto;
-	border: 30px solid black;
+	border: 6px solid white;
 	}
 /*#logo{
 	width: 800px;
@@ -38,62 +92,76 @@ h1{
 	
 }*/
 #sale{
-	width: 600px;
-	height: 200px;
+	width: 40%;
+	height: 20%;
 	display: block;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 40px;
+	margin-bottom: 30px;
 }
 #sale:hover{
-	width: 650px;
-	height: 250px;
+	width: 50%;
+	height: 25%;
 	 
 }
 .imgSection:hover{
-	  opacity: 0.5;
+	 opacity: 0.5;
     filter: alpha(opacity=50);
 }
 	
-#txt{
-	background-color: black;
-	border: 2px solid black;
-	padding: 40px 200px 40px 200px;
-	
-}
 
 .imgSection{
-	width: 300px;
-	height: 300px;
+	width: 22%;
+	height: 240px;
 	float: left;
-	margin-left: 100px;
+	margin-left: 110px;
 	border: 2px solid black;
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
+#txt{
+	background-color: rgba(0, 0, 0, 0.74);;
+	border: 2px solid black;
+	padding: 40px 200px 40px 200px;
+	
+}
+
 #txt2{
 	background-color: black;
 	border: 2px solid black;
-	padding: 40px 20px 40px 20px;
+	padding: 10px 10px 10px 10px;
 	float:left;
 	color: white;
 	font-family: Sans-serif;
-	width: 400px;
-	margin-top: 90px;
-	margin-left: 150px;
-	margin-bottom: 20px;
+	width: 23%;
+	margin-top: 20px;
+	margin-left: 6%;
+	
 }
 #txt3{
 	background-color: black;
 	border: 2px solid black;
-	padding: 40px 20px 40px 20px;
+	padding: 10px 10px 10px 10px;
+	float: left;
+	color: white;
+	font-family: Sans-serif;
+	width: 23%;
+	margin-top: 20px;
+	margin-left: 6%;
+	
+}
+#txt4{
+	background-color: black;
+	border: 2px solid black;
+	padding: 10px 10px 10px 10px;
 	float:right;
 	color: white;
 	font-family: Sans-serif;
-	width: 400px;
-	margin-top: 90px;
-	margin-right: 180px;
-	margin-bottom: 20px;
+	width: 23%;
+	margin-top: 20px;
+	margin-right: 7%;
+	
 }
 
   
@@ -168,7 +236,8 @@ p{
 }
 
 footer{
-	margin-top: 10px;
+	margin-top: 50px;
+	
 	clear: both;
 	text-align: right;
 	background: rgba(2, 2, 2, 0.79);
@@ -177,3 +246,5 @@ footer{
 	font-family: Impact, Charcoal, sans-serif;
 	font-size: 10px;
 }
+
+ }
