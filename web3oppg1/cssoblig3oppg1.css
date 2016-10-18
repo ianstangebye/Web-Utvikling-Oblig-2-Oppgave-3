@@ -1,28 +1,42 @@
 
 body{
 	color: #ddd4d4;
-    padding-top: 12px;
     /*line-height: 2;*/
     /*background-attachment: fixed;*/
    /* background-size: 100%;*/
 }
 header{
 	background-color: black;
+	height: 50%;
+	
 	
 }
 h1{
 	text-align: center;
 	color: white;
-	font-family: Sans-serif;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 300%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+	
 }
-#sp2{
+.logoslide {
+	
+	width: 800px;
+	height: 300px;
+	display: block;
+	margin: auto;
+	border: 30px solid black;
+	}
+/*#logo{
 	width: 800px;
 	height: 300px;
 	display: block;
 	margin: auto;
 	border: 30px solid black;
 	
-}
+}*/
 #sale{
 	width: 600px;
 	height: 200px;
@@ -30,6 +44,16 @@ h1{
 	margin: auto;
 	margin-top: 50px;
 }
+#sale:hover{
+	width: 650px;
+	height: 250px;
+	 
+}
+.imgSection:hover{
+	  opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+	
 #txt{
 	background-color: black;
 	border: 2px solid black;
@@ -71,37 +95,7 @@ h1{
 	margin-right: 180px;
 	margin-bottom: 20px;
 }
-/*@keyframes slidePicFadeInOut {
-  0% {
-    opacity:1;
-  }
-  17% {
-    opacity:1;
-  }
-  25% {
-    opacity:0;
-  }
-  92% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
 
-#slidepImg img:nth-of-type(1) {
-  animation-delay: 6s;
-}
-#slideImg img:nth-of-type(2) {
-  animation-delay: 4s;
-}
-#slideImg img:nth-of-type(3) {
-  animation-delay: 2s;
-}
-#slideImg img:nth-of-type(4) {
-  animation-delay: 0;
-}
- */ 
   
 nav{
 	width: 100%;
@@ -142,21 +136,8 @@ p{
 	font-family: Sans-serif;
 }
 
-/*article{
-	float: left;
-	width: 60%;
-	padding-left:30px;
-
-}*/
 
 
-@keyframes myfirst{
-    0%   {left:0px; top:0px;}
-    25%  {left:200px; top:0px;}
-    50%  {left:200px; top:200px;}
-    75%  {left:0px; top:200px;}
-    100% {left:0px; top:0px;}
-}
 
 
 .btn2{

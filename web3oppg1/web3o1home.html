@@ -4,6 +4,22 @@
 	<meta charset="UTF-8">
 	<title>Weboblig3oppg1</title>
 	<link rel="stylesheet" type="text/css" href="cssoblig3oppg1.css"/>
+	<script>
+		var logo = 0;
+		slide();
+
+	function slide() {
+		var i;
+		var x = document.getElementsByClassName("logoslide");
+		for (i = 0; i < x.length; i++) {
+		   x[i].style.display = "none";
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}
+		x[myIndex-1].style.display = "block";
+		setTimeout(slide, 2000); // Change image every 2 seconds
+	}
+	</script>
 </head>
 	
 
@@ -24,15 +40,12 @@
      </nav>
 	<header>
 		<h1> welcome to ToonTown!</h1>
-		<div id="slideImg" class="shadow">
-			
-			<img id="sp2" src="sp2.jpg" alt="south park picture"/>
-		<!--	<img src="/undertale2.jpg;" />
-			<img src="/bobsburgers.jpg;" />
-			<img src="/images/Birdman.jpg;" />-->
+		<div class="logos" >
+			<img class="logoslide" src="logo.png" alt="Logo of different characters from ToonTown!"/>
+		<!--	<img class="logoslide" src="undertale2.jpg" />
+			<img class="logoslide" src="bobsburgers.jpg" />
+			<img class="logoslide" src="southpark1.png" />-->-->
 		</div>
-			
-		<h1></h1>
 	</header>	
 		<img id="sale" src="undbanner.jpg" alt="south park picture"/>
 	<article>
